@@ -44,39 +44,21 @@ Interface
 
 
 Algorithm 
-btnSetup
-	Read in the number of puppies, days and price per kilo of food through textboxes
-	Resize the puppies(numPuppies)
-	For each puppy
-		Create a new object – Puppies(p) = new Puppy(numDays)
-	Resize grid to match display of name , weight and total
-btnReadinAndDisplay
-	for each puppy
-		Read and store in name, gender, breed age
-		Display the name inn grid
-		For each day 
-			Read and store the weight of the puppy
-			Display the weight of the puppy each day in grid
-		Next
-	Next
-btnDeterminetotalFoodperPuppy
-	for each puppy 
-		total = Puppies(p). FoodConsumed()
-		Display total in the grid
-	Next
-btnTotalFoodandCost
-total = 0 
-for each puppy
-	total += puppies(p). FoodConsumed()
-next
-total = total / 1000
-Display the total food eaten
-Kilo += Cint(total /1000)
-If (kilo mod 1000 > 0) then
-       Kilo += 1
-End if
-TotalPrice = Kilo * PricePerKilo
-Display total Price
+btnLearn
+	Read in topic choice
+	Display Learning Material
+btnQuiz 
+	Generate random questions with answer
+	for each question	
+		display problem
+		read in input
+		if answer is correct
+			display correct
+		else
+			display correct answer
+		end if
+	end for
+
 
 UML Class Diagram 
 Puppy
